@@ -25,7 +25,7 @@ def adjust_matrix(matrix):
     return matrix
 
 
-if __name__ == '__main__':
+def main():
     matrix = [[1],[2],[3]]
     print adjust_matrix(matrix)
 
@@ -38,3 +38,6 @@ if __name__ == '__main__':
     matrix = [[1, 2, 3, 4], [1, 2, 3, 4],
               [1, 2, 0, 4], [1, 2, 3, 4]]
     print adjust_matrix(matrix)
+
+if __name__ == '__main__':
+    main()

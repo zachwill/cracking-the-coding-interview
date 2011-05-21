@@ -7,16 +7,24 @@ def remove_duplicates(string):
 
 
 def remove_with_dict(string):
-    """Implement my own set function."""
+    """Implement own set function as dict keys."""
     string_dict = {}
     for letter in string:
         string_dict[letter] = True
     return string_dict.keys()
 
-if __name__ == '__main__':
+
+def main():
+    # Sets.
     print remove_duplicates('a')
+    print remove_duplicates('abb')
     print remove_duplicates('abcd')
     print remove_duplicates('abcda')
+    # List of dictionay keys.
     print remove_with_dict('a')
+    print remove_with_dict('abb')
     print remove_with_dict('abcd')
     print remove_with_dict('abcda')
+
+if __name__ == '__main__':
+    main()

@@ -42,18 +42,18 @@ class NodeWithMin(object):
 
 
 def main():
-    z = Stack()
-    z.push(1)
-    z.push(2)
-    z.push(3)
-    node = z.pop()
+    stack = Stack()
+    stack.push(1)
+    stack.push(2)
+    stack.push(3)
+    node = stack.pop()
     print node.minimum
-    z.push(0)
-    z.push(4)
-    node = z.pop()
+    stack.push(0)
+    stack.push(4)
+    node = stack.pop()
     print node.min()
-    print z.min()
-    print z
+    print stack.min()
+    print stack
 
 if __name__ == '__main__':
     main()

@@ -5,7 +5,11 @@ def reverse(string):
     """Reverse a given string."""
     return string[::-1]
 
-if __name__ == '__main__':
+
+def main():
     print reverse('a')
     print reverse('abcd')
     print reverse('hello world')
+
+if __name__ == '__main__':
+    main()
