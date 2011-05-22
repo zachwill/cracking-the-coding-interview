@@ -12,9 +12,9 @@ def custom_add(first, second):
         return first
     elif first is 0:
         return second
-    combine = first ^ second
+    xor = first ^ second
     carry = (first & second) << 1
-    return custom_add(combine, carry)
+    return custom_add(xor, carry)
 
 
 def list_add(first, second):
