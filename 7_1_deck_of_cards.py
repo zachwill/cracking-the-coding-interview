@@ -30,9 +30,6 @@ class Card(object):
         """Called by comparison operators."""
         return self.game_value - other.game_value
 
-    def value(self):
-        return self.game_value
-
 
 def main():
     jack = Card('J', 'clubs')
