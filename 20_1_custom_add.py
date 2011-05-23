@@ -17,12 +17,12 @@ def custom_add(first, second):
     return custom_add(xor, carry)
 
 
-def list_add(first, second):
-    """Addition with lists."""
-    first_range = range(first)
-    second_range = xrange(second)
-    first_range.extend(second_range)
-    return len(first_range)
+def array_add(first, second):
+    """Addition with bytearrays."""
+    first_array = bytearray(first)
+    second_array = bytearray(second)
+    first_array.extend(second_array)
+    return len(first_array)
 
 
 def main():
@@ -31,11 +31,11 @@ def main():
     print custom_add(2, 3)    # 5
     print custom_add(20, 12)  # 32
     print custom_add(50, 49)  # 99
-    # With lists.
-    print list_add(0, 1)    # 1
-    print list_add(2, 3)    # 5
-    print list_add(20, 12)  # 32
-    print list_add(50, 49)  # 99
+    # With bytearrays.
+    print array_add(0, 1)    # 1
+    print array_add(2, 3)    # 5
+    print array_add(20, 12)  # 32
+    print array_add(50, 49)  # 99
 
 if __name__ == '__main__':
     main()
