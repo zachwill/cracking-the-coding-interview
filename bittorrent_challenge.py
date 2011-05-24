@@ -10,13 +10,13 @@ and C such that the distance between A and B is equal to the distance
 between B and C. How many ways can you arrange the oranges in the bowls?.
 """
 
-from itertools import combinations, imap, takewhile
+from itertools import combinations, imap
 
 
 def eliminate(combo):
     """Eliminate combinations that do not fit the criteria."""
-    for x, y, z in combo:
-        if abs(x - y) is abs(y - z):
+    for a, b, c in combo:
+        if abs(a - b) is abs(b - c):
             return False
     return True
 
