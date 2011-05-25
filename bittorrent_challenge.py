@@ -16,7 +16,7 @@ from itertools import combinations, imap
 def eliminate(combo):
     """Eliminate combinations that do not fit the criteria."""
     for a, b, c in combo:
-        if abs(a - b) is abs(b - c):
+        if abs(a - b) == abs(b - c):
             return False
     return True
 
