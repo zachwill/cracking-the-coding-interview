@@ -13,7 +13,7 @@ To see this for yourself, run the following from the commandline:
 
 def hanoi(n, a='A', b='B', c='C'):
     """Move n discs from a to c using b as middle."""
-    if n is 0:
+    if n == 0:
         return
     hanoi(n - 1, a, c, b)
     print a, '->', c
@@ -22,6 +22,7 @@ def hanoi(n, a='A', b='B', c='C'):
 
 def main():
     hanoi(4)
+
 
 if __name__ == '__main__':
     main()
