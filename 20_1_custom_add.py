@@ -12,9 +12,9 @@ def sum_add(first, second):
 
 def binary_add(first, second):
     """Binary voodoo magic."""
-    if second is 0:
+    if second == 0:
         return first
-    elif first is 0:
+    elif first == 0:
         return second
     xor = first ^ second
     carry = (first & second) << 1

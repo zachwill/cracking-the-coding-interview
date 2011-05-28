@@ -10,7 +10,8 @@ def remove_with_dict(string):
     """Implement own set function as dict keys."""
     string_dict = {}
     for letter in string:
-        string_dict[letter] = True
+        if letter not in string_dict:
+            string_dict[letter] = True
     return string_dict.keys()
 
 

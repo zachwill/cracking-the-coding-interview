@@ -34,6 +34,7 @@ class Card(object):
 def main():
     jack = Card('J', 'clubs')
     print jack
+
     king = Card('K', 'hearts')
     print king
     print 'K > J:', king > jack
@@ -49,6 +50,7 @@ def main():
     joker = Card('Joker', game_value=100)
     print joker
     print 'Joker > K:', joker > king
+
 
 if __name__ == '__main__':
     main()
